@@ -1,0 +1,40 @@
+* {
+    font-family: sans-serif;
+}
+
+header {
+    text-align: right;
+    margin-top: 100px;
+}
+
+li {
+    list-style-type: none;
+    display: inline;
+    padding-right: 20px;
+}
+
+main {
+    text-align: center;
+}
+
+/*smallest view*/
+@media screen and (min-width: 320px) {
+    main {
+        
+    }
+}
+
+/* Tablet view */
+@media screen and (min-width: 521px) {
+    main {
+        
+    }
+}
+
+/* Larger view */
+@media screen and (min-width: 1000px) {
+    main {
+        
+    }
+}
+

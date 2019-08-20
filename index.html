@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Formula One Quiz App</title>
+        <meta name="description" content="Test your knowledge of four of Formula One's most winning drivers of all time">
+        <link href="index.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body>
+        <header role="banner">
+            <ul>
+                <li>Question: <span class="questionNumber">/10 </span></li>
+                <li>Score: <span class="score"></span></li>
+                <!--questionNumber will be a counter, 
+                    questionNumber and score will hidden on firstPage 
+                    and will only show on quizPages-->
+            </ul>
+        </header>
+         <main role="main">
+            <div class="firstPage" role="text">
+                <h1>How well do you know four of Formula One's most winning drivers of all time?</h1>
+                <button type="button" class="startButton" role="button">Let the race begin!</button>
+            </div>
+            <div class="quizPage" role="text">
+                <form class="questionPage" role="form">
+                    <!--form will be pulled from array STORE 
+                        located in data.js file-->
+                    
+                </form>
+            </div>
+            <div class="finalPage" role="text">
+            </div>
+         </main>
+    </body>
+</html>
