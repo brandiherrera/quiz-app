@@ -16,9 +16,26 @@ li {
 
 main {
     text-align: center;
+    margin-right: 10%;
+    margin-left: 10%;
 }
 
-/*smallest view
+fieldset {
+    border: none;
+}
+
+answerOption.input {
+    padding-right: 5px;
+}
+.answerOption {
+    display: block;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border: 1px black solid;
+    margin-bottom: 5px;
+}
+/*
+smallest view
 @media screen and (min-width: 320px) {
     main {
         

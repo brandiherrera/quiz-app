@@ -24,7 +24,7 @@ function displayQuestion() {
         <h2> ${STORE[questionNumber].question} </h2>
         <div class="answer-container">
             <label class="answerOption">
-                <input type="radio" name="answer" value="${STORE[questionNumber].answers[0]}" required>
+                <input idtype="radio" name="answer" value="${STORE[questionNumber].answers[0]}" required>
                 <span>${STORE[questionNumber].answers[0]}</span>
             </label>
             <label class="answerOption">
@@ -41,19 +41,13 @@ function displayQuestion() {
             </label>
         </div>
         <button type="submit" class="submitButton">Submit</button>
-        </fieldset>
-        
+        </fieldset>        
         </form>
         `;
-        
-    
-        
-        
-
-
-    }
+    };
 }
 displayQuestion();
+
 
 function startQuiz() {
     $('.main').on('click', 'button', function(event) {
