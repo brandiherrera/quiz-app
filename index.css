@@ -7,6 +7,7 @@ header {
     margin-top: 100px;
 }
 
+
 li {
     list-style-type: none;
     display: inline;
@@ -17,24 +18,24 @@ main {
     text-align: center;
 }
 
-/*smallest view*/
+/*smallest view
 @media screen and (min-width: 320px) {
     main {
         
     }
 }
 
-/* Tablet view */
+ Tablet view 
 @media screen and (min-width: 521px) {
     main {
         
     }
 }
 
-/* Larger view */
+ Larger view 
 @media screen and (min-width: 1000px) {
     main {
         
     }
 }
-
+*/
