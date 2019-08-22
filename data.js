@@ -1,10 +1,3 @@
-const answers = [
-    'Michael Schumacher',
-    'Lewis Hamilton',
-    'Sebastian Vettel',
-    'Niki Lauda'
-];
-
 const STORE = [
     {
         question: 'Which driver currently holds the most world championships?',
@@ -67,7 +60,7 @@ const STORE = [
         correctAnswer: 'Lewis Hamilton',
     },
     {
-        question: 'Which driver is nicknamed "Baby Schumi?',
+        question: 'Which driver is nicknamed "Baby Schumi?"',
         answers: [
             'Michael Schumacher',
             'Lewis Hamilton',
@@ -82,10 +75,10 @@ const STORE = [
             'Michael Schumacher',
             'Lewis Hamilton',
             'Sebastian Vettel',
-            'Niki Lauda'
+            'Niki Lauda',
         ],
         correctAnswer: 'Sebastian Vettel',
-    }
+    },
     {
         question: 'Which driver was involved in a fiery crash and came close to death after suffering severe burns and inhaling toxic fumes, but returned to racing just six weeks after his accident as soon as he was sufficiently recovered?',
         answers: [
