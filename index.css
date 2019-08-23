@@ -20,13 +20,16 @@ main {
     margin-left: 10%;
 }
 
+/* .firstPage {
+    display: none;
+}
+*/
+
+
 fieldset {
     border: none;
 }
 
-answerOption.input {
-    padding-right: 5px;
-}
 .answerOption {
     display: block;
     padding-bottom: 20px;
