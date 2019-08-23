@@ -1,6 +1,6 @@
 const STORE = [
     {
-        question: 'Which driver currently holds the most world championships?',
+        question: 'Which driver currently holds the most World Drivers\' Championships?',
         answers: [
             'Michael Schumacher',
             'Lewis Hamilton',
@@ -8,6 +8,7 @@ const STORE = [
             'Niki Lauda'
         ],
         correctAnswer: 'Michael Schumacher',
+        explanation: 'Michael Schumacher has 7 World Drivers\' Championships. Tied for second-most is Lewis Hamilton and Juan Manuel Fangio with 5, and tied with third-most are Alain Prost and Sebastian Vettel with 4.'
     },
     {
         question: 'Which driver is currently a global brand ambassador with American company, Tommy Hilfiger?',
@@ -100,28 +101,3 @@ const STORE = [
         correctAnswer: 'Michael Schumacher',
     }
 ];
-
-/*
-const STORE = [
-    {
-        question: 'Which driver currently holds the most world championships?',
-        answers: [
-            'Michael Schumacher',
-            'Lewis Hamilton',
-            'Sebastian Vettel',
-            'Niki Lauda'
-        ],
-        correctAnswer: 'Michael Schumacher',
-    },
-    {
-        question: 'Which driver is currently a global brand ambassador with American company, Tommy Hilfiger?',
-        answers: [
-            'Michael Schumacher',
-            'Lewis Hamilton',
-            'Sebastian Vettel',
-            'Niki Lauda'
-        ],
-        correctAnswer: 'Lewis Hamilton',
-    }
-];
-*/
