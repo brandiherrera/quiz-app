@@ -5,40 +5,32 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Formula One Quiz App</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
-        <meta name="description" content="Test your knowledge of four of Formula One's most winning drivers of all time">
+        <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
         <link href="index.css" rel="stylesheet" type="text/css" />
+        <meta name="description" content="Test your knowledge of four of Formula One's most winning drivers of all time">
     </head>
 
     <body>
-        <header class="header" role="banner">
-            
-        </header>
         <main class="main" role="main">
-            <header hidden>
-                <ul>
-                    <li>Question: <span class="questionNumber"></span> / 10 </li>
-                    <li>Score: <span class="score"></span>  / 10 </span></li>
-                </ul>
-            </header>
-            <div class="firstPage" role="text">
-                <h1>How well do you know four of Formula One's most winning drivers of all time?</h1>
-                <button type="submit">Let the race begin!</button>
-            </div>
-            <div class="quizPage" role="text">
-
-                    
-            </div>
-            <div class="resultsPage" role="text" hidden>
-                
-            </div>    
-            <div class="finalPage" role="text" hidden>
-                
-                <button type="submit" class="restartButton">Restart Quiz</button>
-            </div>
+            <section class="div-background" role="presentation">
+            <section class="div-text" role="presentation">        
+                <div class="firstPage" role="text">
+                    <h1>How well do you know four of Formula One's most winning drivers of all time?</h1>
+                    <button type="submit">Let the race begin!</button>
+                </div>
+                <div class="quizPage" role="text">
+                </div>
+                <div class="resultsPage" role="text" hidden>
+                </div>
+                <div class="finalPage" role="text" hidden>
+                    <button type="submit" class="restartButton">RESTART</button>
+                </div>
+            </section>
             <footer>
-                <button type="submit" class="submitButton" hidden>Submit</button>
-                <button type="submit" class="nextButton" hidden>Next Question</button>
+                <button type="submit" class="submitButton" hidden>SUBMIT</button>
+                <button type="submit" class="nextButton" hidden>NEXT</button>
             </footer>
+        </section>
         </main>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="data.js"></script>

@@ -1,61 +1,170 @@
 * {
-    font-family: sans-serif;
+    font-family: 'Titillium Web', sans-serif;
 }
 
-header {
-    text-align: right;
-    margin-top: 100px;
+body {
+    background: url("https://image.stern.de/7148030/uncropped-0-0/13408fdbd90360c2691ee9c08b8a35a9/xm/formel-1.jpg") fixed;
+    background-size: cover;
+    background-repeat: no-repeat; 
 }
 
+h1 {
+    font-size: 45px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 25px;
+}
+.resultsPage p, .finalPage p {
+    line-height: 25px;
+}
+.answer-container {
+    font-size: 20px;
+}
 
 li {
     list-style-type: none;
-    display: inline;
-    padding-right: 20px;
+    display: inline-block;
+    padding-right: 18px;
+
+    font-size: 20px;
+    color: gray;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+p {
+    font-size: 18px;
 }
 
 main {
+    margin-top: 50px;
+    margin-bottom: 50px;
     text-align: center;
     margin-right: 10%;
     margin-left: 10%;
 }
 
-/* .firstPage {
-    display: none;
-}
-*/
+.div-background {
+    background:#24dbc9;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    opacity: 0.9; 
 
+}
+
+.div-text {
+    color: black;
+}
 
 fieldset {
     border: none;
 }
 
+button {
+    background: white;
+    color: grey;
+    font-size: 20px;
+    border: white 1px;
+    border-radius: 6px;
+    height: 50px;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+button:hover, button:focus {
+    background-color: #999999;
+    color: white;
+    border: white 1px;
+}
 .answerOption {
     display: block;
     padding-bottom: 20px;
     padding-top: 20px;
-    border: 1px black solid;
+    border: 2px white solid;
+    background: #91ede4;
     margin-bottom: 5px;
 }
-/*
-smallest view
-@media screen and (min-width: 320px) {
-    main {
-        
+label:focus {
+    background: #24dbc9;
+    color: white;
+}
+.answerOption:hover, .answerOption:focus {
+    background: #24dbc9;
+    color: white;
+}
+
+.answer-container input[type="radio"] {
+    display: none
+}
+
+input[type="submit"] {
+    background: white;
+    color: gray;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+input[type="radio"]:checked+label {
+    background-color: #1dafa1;
+    color: white;
+}
+
+img {
+    background-color: transparent;
+    height: 125px;
+    width: 125px;
+}
+
+
+/* Smallest view 
+@media screen and (max-width: 320px) {
+
+}*/
+
+/* Tablet view */
+@media screen and (max-width: 774px) {
+    p {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    h1 {
+        font-size: 35px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+    .answerOption {
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
+}
+@media screen and (min-width: 775px) {
+    p {
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+    li {
+        font-size: 25px;
     }
 }
 
- Tablet view 
-@media screen and (min-width: 521px) {
-    main {
-        
-    }
-}
-
- Larger view 
+/* Larger view */
 @media screen and (min-width: 1000px) {
     main {
-        
+        width: 80%;
+        margin-bottom: 100px;
+    }
+    h2 {
+        font-size: 35px;
     }
 }
-*/
+
