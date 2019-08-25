@@ -1,16 +1,11 @@
-console.log("working");
 let score = 0;
-console.log(score);
 let questionNumber = 0;
 let questionNumberDisplay = questionNumber+1;
 
 
 
 function displayQuestion() {
-    console.log("running `displayQuestion`");
-
     if (questionNumber <= STORE.length) {
-        console.log(STORE.length);
         return `<ul>
             <li><b>QUESTION:</b> ${questionNumberDisplay} / 10</li>
             <li><b>SCORE:</b> ${score} / 10</li>
@@ -62,7 +57,6 @@ function answerCorrect() {
         <p>${STORE[questionNumber].explanation}<p>
         `
         );
-    console.log("running `answerCorrect`");
     return false
 }
 
@@ -80,23 +74,18 @@ function answerIncorrect() {
         <p>${STORE[questionNumber].explanation}</p>
         `
         );
-    console.log("`answerIncorrect` complete");
     return false
 }
 
 function checkAnswer() {
     let userSelection = $('input[name=answer]:checked');
     let userAnswer = userSelection.val();
-    console.log(userAnswer);
     let correctAnswer = `${STORE[questionNumber].correctAnswer}`;
-    console.log("running `checkAnswer`");
     if (userAnswer === correctAnswer) {
         answerCorrect();
     } else {
         answerIncorrect();
     };
-    console.log("`checkAnswer` complete")
-    console.log("TEST TEST");
     $('.nextButton').show();
     return false
 }
@@ -105,16 +94,12 @@ function checkAnswer() {
 function checkNextAnswer() {
     let userSelection = $('input[name=answer]:checked');
     let userAnswer = userSelection.val();
-    console.log(userAnswer);
     let correctAnswer = `${STORE[questionNumber].correctAnswer}`;
-    console.log("running `checkAnswer`");
     if (userAnswer === correctAnswer) {
         answerCorrect();
     } else {
         answerIncorrect();
     };
-    console.log("`checkAnswer` complete")
-    console.log("TEST TEST");
     $('.nextButton').show();
     return false 
 }
@@ -122,12 +107,8 @@ function checkNextAnswer() {
 
 
 function displayNextQuestion() {
-    console.log("running `displayNextQuestion`");
-    console.log(STORE.length);
     $('.nextButton').hide();
-    console.log(questionNumber)
     if (questionNumber <= STORE.length) {
-        console.log(STORE.length);
     return `<ul>
             <li><b>QUESTION:</b> ${questionNumber+1} / 10</li>
             <li><b>SCORE:</b> ${score} / 10</span></li>
@@ -165,13 +146,8 @@ $('.nextButton').on('click', function(event) {
     event.preventDefault();
     increaseQuestionNumber();
     if (questionNumber < STORE.length) {
-        console.log(questionNumber);
-
-
-        console.log(questionNumber);
         $('.resultsPage').hide();
         $('.quizPage').html(displayNextQuestion());
-        console.log("`displayNextQuestion` working")
         $('.quizPage').show();
     } else {
         $('.nextButton').hide();
@@ -180,7 +156,6 @@ $('.nextButton').on('click', function(event) {
         $('.restartButton').show();
         $('.finalPage').show();
         $('.finalPage').prepend()
-        console.log("rendering `finalPage`");
         return false
     };
 })
@@ -224,7 +199,6 @@ function startQuiz() {
     $('.firstPage').on('click', 'button', function(event) {
         event.preventDefault();
         $('.firstPage').hide();
-        console.log("running `startQuiz`");
         $('.quizPage').append(displayQuestion());
     });
 }
